@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<title>blore street food</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<style type="text/css">
+	 #block1{
+    background-color: grey;
+}
+	 #block2{
+    background-color: grey;
+}
+	 #block3{
+    background-color: grey;
+}
+
+a:hover {
+    background-color: #555;
+
+    text-decoration: underline;
+
+}
+p {
+    text-indent: 50px;
+}
+
+
+</style>
+</head>
+<body style="background:black">
+
+<div>
+<div id="page1">
+	<div><a href=""><h1 style="color:white">BLR Street food</h1></a>
+	<div style="float:right;">
+	<a href="" style="color:white" onclick=" about();return false">ABOUT</a>
+	<a href="" style="color:white">BLOG</a>
+	<a href="" style="color:white">EVENT</a>
+	<a href="" style="color:white">SPEAKING</a>
+	<a href="" style="color:white">SPONSORS</a>
+	<a href="" style="color:white">VENU</a>
+	<a href="" style="color:white"onclick="regi();return false">REGISTER</a>
+	</div>
+	</div><br/><br/>
+	<div style="background:white">
+	<div>
+		<img src="BLR Street Food sliced assets with content/slider-images/slider1.jpg" style="padding-left:10%" id="imgg" onhover="myFunction(this)" >
+		</div>
+	<div class="row">
+	 <a  href="#" onclick="indir()"><div class="col-md-4" id="block1"><h3>Indiranagar</h3></div></a>
+	  <a  href="#" onclick="vvp()"><div class="col-md-4" id="block2"><h3>VV Puram</h3></div></a>
+	  <a  href="#" onclick="kora()"><div class="col-md-4" id="block3"><h3>Koramangala</h3></div></a>
+
+	</div>
+		<p id="indirp"></p>
+	</div>
+</div>
+</div>
+	<!-- background white ends here -->
+<!-- first page ends here -->
+<!-- about begins here -->
+	<div id="aboutpage">
+<div><a href="" onclick="sub1();return false" ><img src="BLR Street Food sliced assets with content/logo-and-icons/blr-street-food-logo.png"></img></a>
+	<div style="float:right;">
+	<a href="" style="color:white" onclick=" about();return false">ABOUT</a>
+	<a href="" style="color:white">BLOG</a>
+	<a href="" style="color:white">EVENT</a>
+	<a href="" style="color:white">SPEAKING</a>
+	<a href="" style="color:white">SPONSORS</a>
+	<a href="" style="color:white">VENU</a>
+	<a href="" style="color:white" onclick="regi();return false">REGISTER</a>
+	</div>
+	</div><br/><br/>
+		<p>Bangalore – An Epicure’s Paradise. Take a walk during the night through the streets of Bangalore and the pleasant aroma of the gourmet food that is prepared here every moment, is sure to leave you in awe. The lovely food prepared in the streets of Bangalore is no less tasty than the local and international cuisines at five-star restaurants. The shops here do not have good seating arrangements- agreed, but eating here in the crescent moonlight with a cool breeze for company is an experience like no other.</p>
+		<p>
+			Serving utterly delicious Butter Masala Dosa continuously to a huge number of customers is no child’s play. But CTR at Margosa Road, Malleshwaram has done this effortlessly and brilliantly for over six decades and is thus, a delight for Dosa lovers. Even to this day, this Tiffin Room is one of the best places to have South Indian Street Food in Bangalore. Apart from variety of dosas they also serve idly – vada, kesribath and the poori sagu. There are also other shops which serve ice creams, chats and other stuff around the place.
+		</p>
+	</div>
+<!-- about ends here -->
+
+<!-- register starts here -->
+<div id="regi">
+
+<div><a href="" onclick="sub1();return false" ><img src="BLR Street Food sliced assets with content/logo-and-icons/blr-street-food-logo.png"></img></a>
+	<div style="float:right;">
+	<a href="" style="color:white" onclick=" about();return false">ABOUT</a>
+	<a href="" style="color:white">BLOG</a>
+	<a href="" style="color:white">EVENT</a>
+	<a href="" style="color:white">SPEAKING</a>
+	<a href="" style="color:white">SPONSORS</a>
+	<a href="" style="color:white">VENU</a>
+	<!-- <a href="" style="color:white" onclick="regi();return false" id="regi">REGISTER</a> -->
+	<a href="" style="color:white"  id="regi">REGISTER</a>
+	</div>
+	</div><br/><br/><br/><div style="padding-left:40%">
+	First name:<input type="text" id="ip1"></input><br/>
+	Last name:<input type="text" id="ip2"></input><br/>
+	Email:    <input type="text" id="ip3"  style="padding-left:5%"></input><br/>
+	password:<input type="password" id="ip4"></input><br/>
+	Confirm password:<input type="password" id="ip5"></input><br/>
+	Phone Number:<input type="text" id="ip6"></input><br/>
+	<button onclick="sub()">submit</button><br/>
+	</div>
+</div>
+<!-- register starts here -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+</script>
+<script type="text/javascript">
+
+
+		vax=document.getElementById("block2");
+		vax.style.border = "5px solid orange";
+
+
+		vax=document.getElementById("block1");
+		vax.style.border = "0px solid grey";
+
+		vax=document.getElementById("block3");
+		vax.style.border = "0px solid grey";
+
+		document.getElementById("indirp").innerHTML='<br/>	From the hot and spicy Masala Dosa to the sweet and sublime Dal Holige drenched in pure ghee, there is everything on this Food Street in Bangalore that you may want to eat. The rose gulkand enriched with the goodness of pure Honey and white Butter is one thing you should not miss at the Shivanna Gulkand Center. The food here is also quite economical and one of the best in Bengaluru. There are a number of stalls here including the Pav Bajji stall, the Sweet Corn stall, Manchurian stall to name a few.<br/>	From the hot and spicy Masala Dosa to the sweet and sublime Dal Holige drenched in pure ghee, there is everything on this Food Street in Bangalore that you may want to eat. The rose gulkand enriched with the goodness of pure Honey and white Butter is one thing you should not miss at the Shivanna Gulkand Center. The food here is also quite economical and one of the best in Bengaluru. There are a number of stalls here including the Pav Bajji stall, the Sweet Corn stall, Manchurian stall to name a few single egg roll.<br/>	From the hot and spicy Masala Dosa to the sweet and sublime Dal Holige drenched in pure ghee, there is everything on this Food Street in Bangalore that you may want to eat. The rose gulkand enriched with the goodness of pure Honey and white Butter is one thing you should not miss at the Shivanna Gulkand Center. The food here is also quite economical and one of the best in Bengaluru. There are a number of stalls here including the Pav Bajji stall, the Sweet Corn stall, Manchurian stall to name a few. add ons<br/>	From the hot and spicy Masala Dosa to the sweet and sublime Dal Holige drenched in pure ghee, there is everything on this Food Street in Bangalore that you may want to eat. The rose gulkand enriched with the goodness of pure Honey and white Butter is one thing you should not miss at the Shivanna Gulkand Center. The food here is also quite economical and one of the best in Bengaluru. There are a number of stalls here including the Pav Bajji stall, the Sweet Corn stall, Manchurian stall to name a few.Mixed Vegetable';
+
+
+
+	document.getElementById("aboutpage").style.display = 'none';
+	document.getElementById("regi").style.display = 'none';
+	function indir(){
+		va=document.getElementById("block1");
+		va.style.border = "5px solid orange";
+
+
+		va=document.getElementById("block2");
+		va.style.border = "0px solid grey";
+
+
+		va=document.getElementById("block3");
+		va.style.border = "0px solid grey";
+
+
+		document.getElementById("indirp").innerHTML='Located at the ground floor of the Sri Shiva Sai Complex in Indiranagar, this is one of the best street food places in Bangalore to have delicious and crunchy rolls and grills. Both vegetarian and non–vegetarian street foods are served here and the prices are extremely reasonable. Some of the famous items served are Mixed Vegetable tikka Roll, paneer mushroom, babycorn tikka roll, mutton buna and many others with exclusive add ons like kathi wrap, single egg roll, etc.<br/>	Located at the ground floor of the Sri Shiva Sai Complex in Indiranagar, this is one of the best street food places in Bangalore to have delicious and crunchy rolls and grills. Both vegetarian and non–vegetarian street foods are served here and the prices are extremely reasonable. Some of the famous items served are Mixed Vegetable tikka Roll, paneer mushroom, babycorn tikka roll, mutton buna and many others with exclusive add ons like kathi wrap, single egg roll, etc.may want to eat.<br/>	Located at the ground floor of the Sri Shiva Sai Complex in Indiranagar, this is one of the best street food places in Bangalore to have delicious and crunchy rolls and grills. Both vegetarian and non–vegetarian street foods are served here and the prices are extremely reasonable. Some of the famous items served are Mixed Vegetable tikka Roll, paneer mushroom, babycorn tikka roll, mutton buna and many others with exclusive add ons like kathi wrap, single egg roll, etc.Pav Bajji stall<br/>	Located at the ground floor of the Sri Shiva Sai Complex in Indiranagar, this is one of the best street food places in Bangalore to have delicious and crunchy rolls and grills. Both vegetarian and non–vegetarian street foods are served here and the prices are extremely reasonable. Some of the famous items served are Mixed Vegetable tikka Roll, paneer mushroom, babycorn tikka roll, mutton buna and many others with exclusive add ons like kathi wrap, single egg roll, etc. name a few';
+	}
+	function vvp(){
+		va=document.getElementById("block2");
+		va.style.border = "5px solid orange";
+
+
+		va=document.getElementById("block1");
+		va.style.border = "0px solid grey";
+
+		va=document.getElementById("block3");
+		va.style.border = "0px solid grey";
+
+		document.getElementById("indirp").innerHTML='<br/>	From the hot and spicy Masala Dosa to the sweet and sublime Dal Holige drenched in pure ghee, there is everything on this Food Street in Bangalore that you may want to eat. The rose gulkand enriched with the goodness of pure Honey and white Butter is one thing you should not miss at the Shivanna Gulkand Center. The food here is also quite economical and one of the best in Bengaluru. There are a number of stalls here including the Pav Bajji stall, the Sweet Corn stall, Manchurian stall to name a few.<br/>	From the hot and spicy Masala Dosa to the sweet and sublime Dal Holige drenched in pure ghee, there is everything on this Food Street in Bangalore that you may want to eat. The rose gulkand enriched with the goodness of pure Honey and white Butter is one thing you should not miss at the Shivanna Gulkand Center. The food here is also quite economical and one of the best in Bengaluru. There are a number of stalls here including the Pav Bajji stall, the Sweet Corn stall, Manchurian stall to name a few single egg roll.<br/>	From the hot and spicy Masala Dosa to the sweet and sublime Dal Holige drenched in pure ghee, there is everything on this Food Street in Bangalore that you may want to eat. The rose gulkand enriched with the goodness of pure Honey and white Butter is one thing you should not miss at the Shivanna Gulkand Center. The food here is also quite economical and one of the best in Bengaluru. There are a number of stalls here including the Pav Bajji stall, the Sweet Corn stall, Manchurian stall to name a few. add ons<br/>	From the hot and spicy Masala Dosa to the sweet and sublime Dal Holige drenched in pure ghee, there is everything on this Food Street in Bangalore that you may want to eat. The rose gulkand enriched with the goodness of pure Honey and white Butter is one thing you should not miss at the Shivanna Gulkand Center. The food here is also quite economical and one of the best in Bengaluru. There are a number of stalls here including the Pav Bajji stall, the Sweet Corn stall, Manchurian stall to name a few.Mixed Vegetable';
+	}
+
+		function kora(){
+		va=document.getElementById("block3");
+		va.style.border = "5px solid orange";
+
+
+		va=document.getElementById("block1");
+		va.style.border = "0px solid grey";
+
+		va=document.getElementById("block2");
+		va.style.border = "0px solid grey";
+
+		document.getElementById("indirp").innerHTML='The puzzling name itself indicates that this chat stall situated in Koramangala is a unique one serving lovely chats and other food. The name comes from the delicious and special food tikki poori served here which is one of the best street food in Bangalore. Stop here for a quick bite and I am sure this taste is going to make you addicted to the yummy food served here.Some of the best ones to eat are the chocolate tikki, mudpie tikki, masala tikki and paneer tikki.<br/>	From the hot and spicy Masala Dosa to the sweet and sublime Dal Holige drenched in pure ghee, there is everything on this Food Street in Bangalore that you may want to eat. The rose gulkand enriched with the goodness of pure Honey and white Butter is one thing you should not miss at the Shivanna Gulkand Center. The food here is also quite economical and one of the best in Bengaluru. There are a number of stalls here including the Pav Bajji stall, the Sweet Corn stall, Manchurian stall to name a few.Mixed Vegetable and fruits<br/>	From the hot and spicy Masala Dosa to the sweet and sublime Dal Holige drenched in pure ghee, there is everything on this Food Street in Bangalore that you may want to eat. The rose gulkand enriched with the goodness of pure Honey and white Butter is one thing you should not miss at the Shivanna Gulkand Center. The food here is also quite economical and one of the best in Bengaluru. There are a number of stalls here including the Pav Bajji stall, the Sweet Corn stall, Manchurian stall to name a few.<br/>	From the hot and spicy Masala Dosa to the sweet and sublime Dal Holige drenched in pure ghee, there is everything on this Food Street in Bangalore that you may want to eat. The rose gulkand enriched with the goodness of pure Honey and white Butter is one thing you should not miss at the Shivanna Gulkand Center. The food here is also quite economical and one of the best in Bengaluru. There are a number of stalls here including the Pav Bajji stall, the Sweet Corn stall, Manchurian stall to name a few.Mixed VegetableDal Holige drenched';
+	}
+function about(){
+
+	document.getElementById("page1").style.display = 'none';
+	document.getElementById("aboutpage").style.display = 'block';
+	document.getElementById("regi").style.display = 'none';
+}
+
+
+function regi(){
+	document.getElementById("page1").style.display = 'none';
+	document.getElementById("aboutpage").style.display = 'none';
+	document.getElementById("regi").style.display = 'block';
+}
+
+jQuery(document).ready(function(){
+	jQuery('a.regi').click(function(){
+
+		$("div.page1").hide();
+		$("div.aboutpage").hide();
+		$("div.regi").show();
+		
+	})
+});
+
+$(document).ready(function(){
+	jQuery('a.regi1').click(function(){
+
+		$("div.page1").hide();
+		$("div.aboutpage").hide();
+		$("div.regi").show();
+		
+	})
+});
+
+function sub(){
+	a1=document.getElementById("ip1").value;
+	a2=document.getElementById("ip2").value;
+	a3=document.getElementById("ip3").value;
+	a4=document.getElementById("ip4").value;
+	a5=document.getElementById("ip4").value;
+	if(a1=="" || a2=="" || a3=="" || a4=="" || a5==""){
+		alert("enter all fields");
+	}
+
+	else{
+			alert('Registration successful, Thank you.');
+
+		document.getElementById("page1").style.display = 'block';
+	document.getElementById("aboutpage").style.display = 'none';
+	document.getElementById("regi").style.display = 'none';
+}
+}
+function sub1(){
+		document.getElementById("page1").style.display = 'block';
+	document.getElementById("aboutpage").style.display = 'none';
+	document.getElementById("regi").style.display = 'none';
+}
+
+
+img1='BLR Street Food sliced assets with content/slider-images/slider4.jpg';
+img2='BLR Street Food sliced assets with content/slider-images/slider5.jpg';
+img3='BLR Street Food sliced assets with content/slider-images/slider6.jpg';
+img4='BLR Street Food sliced assets with content/slider-images/slider1.jpg';
+img5='BLR Street Food sliced assets with content/slider-images/slider-sample-with-text.png';
+
+
+count=0;
+
+//myFunction();
+
+function myFunction(aa) {
+
+    setInterval(function(){ 
+    	alert('aaaaa');
+    	count=count%5;
+    	if(count==0){
+	aa.src=img1;
+	count++;
+    	}
+    	if(count==1){
+	aa.src=img2;
+	count++;
+    	}
+    	if(count==2){
+	aa.src=img3;
+	count++;
+    	}
+    	if(count==3){
+	aa.src=img4;
+	count++;
+    	}
+    	if(count==4){
+	aa.src=img5;
+	count++;
+    	}
+    	if(count==0){
+	aa.src=img1;
+	count++;
+    	}
+
+		//document.getElementById("imgg").innerHTML=x;
+     }, 2000);
+}
+
+</script>
+</body>
+</html>
