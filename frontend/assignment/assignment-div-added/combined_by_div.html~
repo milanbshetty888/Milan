@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<title>
+New To City
+</title>
+
+</head>
+<body id="bgimg">
+<div id="page1">
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#" onclick="reviewdisp()">Reviews</a></li>
+  <li role="presentation"><a href="#">About us</a></li>
+</ul>
+
+
+<h2 id="style-welcome"><marquee>Welcome, let's EXPLORE!</marquee></h2>
+
+
+<!--drop down for states --> 
+<p id="state" style="padding-left:42%; font-size:30px">
+<select id="stateid" onchange="distname()" >
+	<optgroup>
+	<option>Andhra Pradesh</option>
+	<option>Arunachal Pradesh</option>
+	<option>Assam</option>
+	<option>Bihar</option>
+	<option>Chandigarh </option>
+	<option>Chhattisgarh</option>
+	<option>Goa</option>
+	<option>Gujarat</option>
+	<option>Haryana</option>
+	<option>Himachal Pradesh</option>
+	<option>Jammu and Kashmir</option>
+	<option>Jharkhand</option>
+	<option>Karnataka</option>
+	<option>Kerala</option>
+	<option>Madhya Pradesh</option>
+	<option>Maharashtra</option>
+	<option>Manipur</option>
+	<option>Meghalaya</option>
+	<option>Mizoram</option>
+	<option>Nagaland</option>
+	<option>Odisha</option>
+	<option>Puducherry</option>
+	<option>Punjab</option>
+	<option>Rajasthan</option>
+	<option>Sikkim</option>
+	<option>Tamil Nadu</option>
+	<option>Telangana</option>
+	<option>Tripura</option>
+	<option>Uttar Pradesh</option>
+	<option>Uttarakhand</option>
+	<option>West Bengal</option>
+	</optgroup>
+</select>
+</p>
+
+<p style="padding-left:42%; font-size:30px">
+<select id="dname" onchange="distcall()" >
+	<option id="d1"> </option>
+	<option id="d2"> </option>
+	<option id="d3"> </option>
+	<option id="d4"> </option>
+	<option id="d5"> </option>
+	<option id="d6"> </option>
+	<option id="d7"> </option>
+	<option id="d8"> </option>
+	<option id="d9"> </option>
+	<option id="d10"> </option>
+	<option id="d11"> </option>
+	<option id="d12"> </option>
+	<option id="d13"> </option>
+	<option id="d14"> </option>
+	<option id="d15"> </option>
+	<option id="d16"> </option>
+	<option id="d17"> </option>
+	<option id="d18"> </option>
+	<option id="d19"> </option>
+	<option id="d20"> </option>
+	<option id="d21"> </option>
+	<option id="d22"> </option>
+	<option id="d23"> </option>
+	<option id="d24"> </option>
+	<option id="d25"> </option>
+	<option id="d26"> </option>
+	<option id="d27"> </option>
+	<option id="d28"> </option>
+	<option id="d29"> </option>
+</select>
+</p>
+<!--submit button -->
+<p style="padding-left:47%; font-size:30px">
+<button type="button"  id="sub" onclick="mys()"></button>
+</p>
+
+<!-- Details of state -->
+<p id="para-id">
+India, officially the Republic of India  is a country in South Asia. It is the seventh-largest country by area, the second-most populous country (with over 1.2 billion people), and the most populous democracy in the world. Bounded by the Indian Ocean on the south, the Arabian Sea on the south-west, and the Bay of Bengal on the south-east, it shares land borders with Pakistan to the west;[d] China, Nepal, and Bhutan to the north-east; and Myanmar (Burma) and Bangladesh to the east. In the Indian Ocean, India is in the vicinity of Sri Lanka and the Maldives; in addition, India's Andaman and Nicobar Islands share a maritime border with Thailand and Indonesia.
+
+Home to the ancient Indus Valley Civilisation and a region of historic trade routes and vast empires, the Indian subcontinent was identified with its commercial and cultural wealth for much of its long history. Four religions—Hinduism, Buddhism, Jainism, and Sikhism—originated here, whereas Zoroastrianism, Judaism, Christianity, and Islam arrived in the 1st millennium CE and also shaped the region's diverse culture. Gradually annexed by and brought under the administration of the British East India Company from the early 18th century and administered directly by the United Kingdom after the Indian Rebellion of 1857, India became an independent nation in 1947 after a struggle for independence that was marked by non-violent resistance led by Mahatma Gandhi.
+</p>
+
+<!-- footer-->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<footer id="footer-style">
+  <p>Posted by: Some One</p>
+  <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
+</footer>
+</div>
+
+<div id="myspage">
+
+<ul class="nav nav-tabs">
+  <li role="presentation" ><a href="#" onclick="home()">Home</a></li>
+  <li role="presentation"><a href="#" onclick="reviewdisp()">Reviews</a></li>
+  <li role="presentation"><a href="#">About us</a></li>
+</ul>
+
+<div id="topimp">
+ <img src="welcome.png" alt="welcome" style="padding-left:40%">
+</div>
+
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      
+  
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Life Style <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a onclick="clothing()">Clothing</a></li>
+            <li><a onclick="saf()">Sports and Fitness</a></li>
+            <li><a onclick="foot()">Footware</a></li>
+
+          </ul>
+        </li>
+      </ul>
+
+
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Entertainment <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a onclick="thet()">Theater</a></li>
+            <li><a onclick="tour()">Tourist place</a></li>
+            <li><a onclick="park()">Parks</a></li>
+          </ul>
+        </li>
+      </ul>
+     
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Education <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a onclick="school()">School</a></li>
+            <li><a href="#">college</a></li>
+          </ul>
+        </li>
+      </ul>
+     
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Automotives <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Car Showroom</a></li>
+            <li><a href="#">Bike Showroom</a></li>
+            <li><a href="#">Accessories</a></li>
+          </ul>
+        </li>
+      </ul>
+     
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Emergency <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">police</a></li>
+            <li><a href="#">Hospital</a></li>
+            <li><a href="#">Fire Dept</a></li>
+          </ul>
+        </li>
+      </ul>
+     
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- google map -->
+<p id="all">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d74169.82841424062!2d76.60225401943298!3d12.310976735720859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf70381d572ef9%3A0x2b89ece8c0f8396d!2sMysuru%2C+Karnataka+570001!5e0!3m2!1sen!2sin!4v1473517014282" width="100%" height="450"  align="middle" frameborder="0" style="border:0" allowfullscreen></iframe> 
+</p>
+
+<table border="3" id="table"  >	
+
+ </table>
+</div>
+
+<div id="review">
+
+<ul class="nav nav-tabs" style="padding-top:15px">
+  <li role="presentation"><a href="#" onclick="home()">Home</a></li>
+  <li role="presentation" class="active"><a href="#">Reviews</a></li>
+  <li role="presentation"><a href="#">About us</a></li>
+</ul>
+
+<div style="padding-left:15px;padding-right:15px;padding-top:15px">
+<form onsubmit="myFunction()">
+  
+<lable>name</lable>
+<br/>
+<input type="text" placeholder="name" id="name"/>
+<br/>
+
+<lable>email</lable>
+<br/>
+<input type="text" placeholder="email" id="email"/>
+<br/>
+
+<lable>review</lable>
+<br/>
+<textarea rows="4" cols="50" placeholder="review" id="textarea"></textarea>
+<br/>
+<button type="submit" class="btn btn-default">Submit</button>
+</form>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+</script>
+<script type="text/javascript">
+
+	document.getElementById("myspage").style.display = "none";
+	document.getElementById("review").style.display = "none";
+
+//function to display only review
+function reviewdisp(){
+	document.getElementById("page1").style.display = "none";
+	document.getElementById("myspage").style.display = "none";
+	document.getElementById("review").style.display = "block";
+}
+//function to display only home
+function home(){
+	document.getElementById("page1").style.display = "block";
+	document.getElementById("myspage").style.display = "none";
+	document.getElementById("review").style.display = "none";
+}
+
+
+
+
+	/*function to display drop-down menu for cities*/
+	function distname()
+	{
+		x=document.getElementById("stateid").value;
+		if(x=="Karnataka")
+		{
+		document.getElementById("d1").innerHTML="Bengaluru";
+		document.getElementById("d2").innerHTML="Chitradurga";
+		document.getElementById("d3").innerHTML="Davanagere";
+		document.getElementById("d4").innerHTML="Kolar";
+		document.getElementById("d5").innerHTML="Ramanagara";
+		document.getElementById("d6").innerHTML="Shivamogga";
+		document.getElementById("d7").innerHTML="Tumakuru";
+		document.getElementById("d8").innerHTML="Mysuru";
+		document.getElementById("d9").innerHTML="Udupi";
+		document.getElementById("d10").innerHTML="Mandya";
+		document.getElementById("d11").innerHTML="Kodagu";
+		document.getElementById("d12").innerHTML="Hassan";
+		document.getElementById("d13").innerHTML="Dakshina Kannada";
+		document.getElementById("d14").innerHTML="Chikkamagaluru";
+		document.getElementById("d15").innerHTML="Chamarajanagar";
+		document.getElementById("d16").innerHTML="Bagalkot";
+		document.getElementById("d17").innerHTML="Belagavi";
+		document.getElementById("d18").innerHTML="Vijayapura";
+		document.getElementById("d19").innerHTML="Dharwad";
+		document.getElementById("d20").innerHTML="Gadag";
+		document.getElementById("d21").innerHTML="Haveri";
+		document.getElementById("d22").innerHTML="Uttara Kannada";
+		document.getElementById("d23").innerHTML="Ballari";
+		document.getElementById("d24").innerHTML="Bidar";
+		document.getElementById("d25").innerHTML="Kalaburagi";
+		document.getElementById("d26").innerHTML="Koppal";
+		document.getElementById("d27").innerHTML="Raichur";
+		document.getElementById("d28").innerHTML="Yadgir";
+		document.getElementById("d29").innerHTML="Chikkaballapur";
+		}
+/*ref: http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_style_backgroundimage*/
+	document.body.style.backgroundImage = "url('karbg.jpg')";
+	
+	para="Karnataka is a state in south western region of India. It was formed on 1 November 1956, with the passage of the States Reorganisation Act. Originally known as the State of Mysore, it was renamed Karnataka in 1973.The capital and largest city is Bangalore (Bengaluru). Karnataka is bordered by the Arabian Sea and the Laccadive Sea to the west, Goa to the northwest, Maharashtra to the north, Telangana to the northeast, Andhra Pradesh to the east, Tamil Nadu to the southeast, and Kerala to the southwest. The state covers an area of 191,976 square kilometres (74,122 sq mi), or 5.83 percent of the total geographical area of India. It is the seventh largest Indian state by area. With 61,130,704 inhabitants at the 2011 census, Karnataka is the eighth largest state by population, comprising 30 districts. Kannada, one of the classical languages of India, is the most widely spoken and official language of the state. The two main river systems of the state are the Krishna and its tributaries, the Bhima, Ghataprabha, Vedavathi, Malaprabha, and Tungabhadra, in the north, and the Kaveri and its tributaries, the Hemavati, Shimsha, Arkavati, Lakshmana Thirtha and Kabini, in the south. Most of these rivers flow out of Karnataka eastward into the Bay of Bengal.";
+	document.getElementById("para-id").innerHTML=para;
+
+	}
+
+	
+/*functon to display explore button*/
+function distcall()
+{
+	document.body.style.backgroundImage = "url('mysbg.jpg')";
+	document.getElementById("sub").innerHTML="Explore";
+
+	para1="Mysore, officially renamed as Mysuru, is the third most populous city in the state of Karnataka, India. Located at the base of the Chamundi Hills about 146 km (91 mi) southwest of the state capital Bangalore, it is spread across an area of 128.42 km2 (50 sq mi). According to the provisional results of the 2011 national census of India, the population is 887,446. Mysore City Corporation is responsible for the civic administration of the city, which is also the headquarters of the Mysore district and the Mysore division. Mysore served as the capital city of Kingdom of Mysore for nearly six centuries, from 1399 until 1974. The Kingdom was ruled by the Wodeyar dynasty, except for a brief period in the late 18th century when Hyder Ali and Tipu Sultan were in power. Patrons of art and culture, the Wodeyars contributed significantly to the cultural growth of the city. The cultural ambience and achievements of Mysore earned it the sobriquet Cultural capital of Karnataka.";
+	document.getElementById("para-id").innerHTML=para1;
+
+}
+
+/*function to enter next page*/
+function mys()
+{
+	x=document.getElementById("dname").value;
+	if(x=="Mysuru"){
+		document.getElementById("page1").style.display = "none";
+		document.getElementById("myspage").style.display = "block";
+		document.getElementById("review").style.display = "none";
+}
+		//window.location="mys1.html";
+
+	/*document.getElementById("page1").style.display = "none";
+	document.getElementById("myspage").style.display = "block";
+	document.getElementById("review").style.display = "none";*/
+
+// ref:  http://www.tutorialspoint.com/javascript/javascript_page_redirect.html
+}
+
+
+
+$("div.container-fluid").fadeOut("fast");
+$("div.container-fluid").fadeIn("slow");
+$("table").hide();
+
+function clothing()
+{
+	$("img").fadeIn("slow");
+	img='<img src="cloths.jpg" alt="welcome" style="padding-left:40%">';
+
+	document.getElementById("topimp").innerHTML=img;
+
+  mp='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d62370.454992615305!2d76.60755276029452!3d12.305452031897378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sclothing+stores+in+mysore!5e0!3m2!1sen!2sin!4v1473516631084" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+	document.getElementById("all").innerHTML=mp;
+
+ct='<table border="3" id="table-style">	<tr>	<th>name</th><th>review</th><th>address</th><th>visit us</th></tr>	<tr>	<th>Badsha Stores - The Silk Experience Since 1965</th><th>4.8</th><th>Shop# 5, Vishveshwarya Bhawan, K.R Circle, Devaraja Mohalla, Chamrajpura, Mysuru, Karnataka 570001</th><th> <a href="https://www.google.co.in/url?sa=t&rct=j&url=http%3A%2F%2Fwww.badshastores.com%2F&source=maps&cd=1&usg=AFQjCNFS0D7bpL3EAREjn84kwRHyHxXYcw&ved=1t%3A3443%2Cp%3APQrVV8-AHsrdvASps5OIBg">Badsha store</a></th>	</tr>	<tr><th>Shoppers Stop</th><th>4.3</th><th>Shop# 5, Vishveshwarya Bhawan, K.R Circle, Devaraja Mohalla, Chamrajpura, Mysuru, Karnataka 570001</th><th> <a href="https://www.google.co.in/url?sa=t&rct=j&url=http%3A%2F%2Fwww.shoppersstop.com%2F&source=maps&cd=1&usg=AFQjCNGmquwjNVps-7f47TX9eztnsuYdCg&ved=1t%3A3443%2Cp%3APQrVV8-AHsrdvASps5OIBg">shoppers stop</a></th>	</tr>	<tr>		<th>Senthil Kumar Textiles</th><th>4.2</th><th>No.67/1A, Sayyaji Rao Road, Near Agrahara Circle, Kille Mohalla,, Agrahara, Fort Mohalla, Mysuru, Karnataka 570004</th><th>**None**</th>	</tr> </table>';
+
+	document.getElementById("table").innerHTML=ct;
+
+$("table").fadeIn();
+$("table").show();
+
+}
+
+function saf()
+{
+img='<img src="saf.jpg" alt="welcome" style="padding-left:40%" >';
+	document.getElementById("topimp").innerHTML=img;
+
+ mp='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d124738.19389915955!2d76.60225397229785!3d12.311169880904924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssports+and+fitness+center+in+mysore!5e0!3m2!1sen!2sin!4v1473517627789" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+	document.getElementById("all").innerHTML=mp;
+
+document.getElementById("table").innerHTML="";
+
+}
+
+function foot()
+{
+img='<img src="foot.jpg" alt="welcome" style="padding-left:40%" >';
+	document.getElementById("topimp").innerHTML=img;
+
+ mp='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d249535.44162228378!2d76.48776888536774!3d12.248869426043271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sfootware+store+in+mysore!5e0!3m2!1sen!2sin!4v1473517786182" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+	document.getElementById("all").innerHTML=mp;
+document.getElementById("table").innerHTML="";
+}
+
+function thet()
+{
+
+img='<img src="thet.jpg" alt="welcome" style="padding-left:40%" >';
+	document.getElementById("topimp").innerHTML=img;
+
+ mp='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d62369.07084165123!2d76.60790526030414!3d12.31127977904667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1stheaters+in+Mysuru%2C+Karnataka!5e0!3m2!1sen!2sin!4v1473518022470" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+	document.getElementById("all").innerHTML=mp;
+document.getElementById("table").innerHTML="";
+}
+function tour()
+{
+
+img='<img src="tour.jpg" alt="welcome" style="padding-left:40%" >';
+	document.getElementById("topimp").innerHTML=img;
+
+document.getElementById("all").innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31185.0914701127!2d76.62506266667147!3d12.306597679688112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1stourist+place+in+mysore!5e0!3m2!1sen!2sin!4v1473583674055" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+document.getElementById("table").innerHTML="";
+}
+
+function school()
+{
+img='<img src="school.jpg" alt="welcome" style="padding-left:40%" >';
+	document.getElementById("topimp").innerHTML=img;
+
+document.getElementById("all").innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31185.08164508733!2d76.62506265833933!3d12.306680424526533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sschools+and+colleages+in+mysore!5e0!3m2!1sen!2sin!4v1473583819543" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+document.getElementById("table").innerHTML="";
+}
+
+function car()
+{
+img='<img src="car.jpg" alt="welcome" style="padding-left:40%" >';
+	document.getElementById("topimp").innerHTML=img;
+
+document.getElementById("all").innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31185.071820000892!2d76.6250626500072!3d12.306763169331505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scar+showroom+in+mysore!5e0!3m2!1sen!2sin!4v1473583948365" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+document.getElementById("table").innerHTML="";
+}
+
+function bike()
+{
+
+img='<img src="bike.jpg" alt="welcome" style="padding-left:40%">';
+	document.getElementById("topimp").innerHTML=img;
+
+document.getElementById("all").innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31185.061994853386!2d76.62506264167506!3d12.306845914103034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbike+showroom+in+mysore!5e0!3m2!1sen!2sin!4v1473583983125" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+document.getElementById("table").innerHTML="";
+}
+
+function police()
+{
+
+img='<img src="police.jpg" alt="welcome" style="padding-left:40%" >';
+	document.getElementById("topimp").innerHTML=img;
+
+document.getElementById("all").innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31185.04234437517!2d76.62506262501078!3d12.307011403545735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spolice+station+in+Mysore%2C+Karnataka!5e0!3m2!1sen!2sin!4v1473584145844" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+document.getElementById("table").innerHTML="";
+}
+
+function hosp()
+{
+img='<img src="hosp.jpg" alt="welcome" style="padding-left:40%" >';
+	document.getElementById("topimp").innerHTML=img;
+
+document.getElementById("all").innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31185.03251904446!2d76.62506261667865!3d12.307094148216908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shospital+in+Mysore%2C+Karnataka!5e0!3m2!1sen!2sin!4v1473584215045" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+document.getElementById("table").innerHTML="";
+}
+
+
+function fire()
+{
+img='<img src="fire.jpg" alt="welcome" style="padding-left:40%" >';
+	document.getElementById("topimp").innerHTML=img;
+
+document.getElementById("all").innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31185.04234437517!2d76.62506262501078!3d12.307011403545735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sfire+station+in+Mysore%2C+Karnataka!5e0!3m2!1sen!2sin!4v1473584189385" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+document.getElementById("table").innerHTML="";
+}
+
+function accs()
+{
+img='<img src="acss.jpg" alt="welcome" style="padding-left:40%" >';
+	document.getElementById("topimp").innerHTML=img;
+
+document.getElementById("all").innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31184.0697970381!2d76.6094491225916!3d12.315199120701449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sautomobiles+accessory+shops+in+Mysore%2C+Karnataka!5e0!3m2!1sen!2sin!4v1473584444413" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+document.getElementById("table").innerHTML="";
+}
+
+function park()
+{
+img='<img src="park.jpg" alt="welcome" style="padding-left:40%">';
+	document.getElementById("topimp").innerHTML=img;
+
+document.getElementById("all").innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d62365.331511091135!2d76.61790010829085!3d12.327010071843889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sparks+in+Mysore%2C+Karnataka!5e0!3m2!1sen!2sin!4v1473584325701" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+document.getElementById("table").innerHTML="";
+}
+function myFunction() {
+    //alert("The form was submitted");
+    name=document.getElementById("name").value;
+    email=document.getElementById("email").value;
+    textarea=document.getElementById("textarea").value;
+    if(name=="" && email=="" && textarea=="")
+    {
+       alert("Empty fields, enter name, email and review");
+    }
+    else 
+    {
+      if (name=="") 
+        alert("Empty field, enter password");
+
+
+      if (email=="") 
+        alert("Empty field, enter email");
+
+      if (textarea=="") 
+        alert("Empty field, enter review");
+
+
+    }
+}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+<title>
+New To City
+</title>
+<script type="text/javascript">
+
+	/*function to display drop-down menu for cities*/
+	function distname()
+	{
+		x=document.getElementById("stateid").value;
+		if(x=="Karnataka")
+		{
+		document.getElementById("d1").innerHTML="Bengaluru";
+		document.getElementById("d2").innerHTML="Chitradurga";
+		document.getElementById("d3").innerHTML="Davanagere";
+		document.getElementById("d4").innerHTML="Kolar";
+		document.getElementById("d5").innerHTML="Ramanagara";
+		document.getElementById("d6").innerHTML="Shivamogga";
+		document.getElementById("d7").innerHTML="Tumakuru";
+		document.getElementById("d8").innerHTML="Mysuru";
+		document.getElementById("d9").innerHTML="Udupi";
+		document.getElementById("d10").innerHTML="Mandya";
+		document.getElementById("d11").innerHTML="Kodagu";
+		document.getElementById("d12").innerHTML="Hassan";
+		document.getElementById("d13").innerHTML="Dakshina Kannada";
+		document.getElementById("d14").innerHTML="Chikkamagaluru";
+		document.getElementById("d15").innerHTML="Chamarajanagar";
+		document.getElementById("d16").innerHTML="Bagalkot";
+		document.getElementById("d17").innerHTML="Belagavi";
+		document.getElementById("d18").innerHTML="Vijayapura";
+		document.getElementById("d19").innerHTML="Dharwad";
+		document.getElementById("d20").innerHTML="Gadag";
+		document.getElementById("d21").innerHTML="Haveri";
+		document.getElementById("d22").innerHTML="Uttara Kannada";
+		document.getElementById("d23").innerHTML="Ballari";
+		document.getElementById("d24").innerHTML="Bidar";
+		document.getElementById("d25").innerHTML="Kalaburagi";
+		document.getElementById("d26").innerHTML="Koppal";
+		document.getElementById("d27").innerHTML="Raichur";
+		document.getElementById("d28").innerHTML="Yadgir";
+		document.getElementById("d29").innerHTML="Chikkaballapur";
+		}
+/*ref: http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_style_backgroundimage*/
+	document.body.style.backgroundImage = "url('karbg.jpg')";
+	
+	para="Karnataka is a state in south western region of India. It was formed on 1 November 1956, with the passage of the States Reorganisation Act. Originally known as the State of Mysore, it was renamed Karnataka in 1973.The capital and largest city is Bangalore (Bengaluru). Karnataka is bordered by the Arabian Sea and the Laccadive Sea to the west, Goa to the northwest, Maharashtra to the north, Telangana to the northeast, Andhra Pradesh to the east, Tamil Nadu to the southeast, and Kerala to the southwest. The state covers an area of 191,976 square kilometres (74,122 sq mi), or 5.83 percent of the total geographical area of India. It is the seventh largest Indian state by area. With 61,130,704 inhabitants at the 2011 census, Karnataka is the eighth largest state by population, comprising 30 districts. Kannada, one of the classical languages of India, is the most widely spoken and official language of the state. The two main river systems of the state are the Krishna and its tributaries, the Bhima, Ghataprabha, Vedavathi, Malaprabha, and Tungabhadra, in the north, and the Kaveri and its tributaries, the Hemavati, Shimsha, Arkavati, Lakshmana Thirtha and Kabini, in the south. Most of these rivers flow out of Karnataka eastward into the Bay of Bengal.";
+	document.getElementById("para-id").innerHTML=para;
+
+	}
+
+	
+/*functon to display explore button*/
+function distcall()
+{
+	document.body.style.backgroundImage = "url('mysbg.jpg')";
+	document.getElementById("sub").innerHTML="Explore";
+
+	para1="Mysore, officially renamed as Mysuru, is the third most populous city in the state of Karnataka, India. Located at the base of the Chamundi Hills about 146 km (91 mi) southwest of the state capital Bangalore, it is spread across an area of 128.42 km2 (50 sq mi). According to the provisional results of the 2011 national census of India, the population is 887,446. Mysore City Corporation is responsible for the civic administration of the city, which is also the headquarters of the Mysore district and the Mysore division. Mysore served as the capital city of Kingdom of Mysore for nearly six centuries, from 1399 until 1974. The Kingdom was ruled by the Wodeyar dynasty, except for a brief period in the late 18th century when Hyder Ali and Tipu Sultan were in power. Patrons of art and culture, the Wodeyars contributed significantly to the cultural growth of the city. The cultural ambience and achievements of Mysore earned it the sobriquet Cultural capital of Karnataka.";
+	document.getElementById("para-id").innerHTML=para1;
+
+}
+
+/*function to enter next page*/
+function mys()
+{
+	x=document.getElementById("dname").value;
+	if(x=="Mysuru")
+		window.location="mys1.html";
+// ref:  http://www.tutorialspoint.com/javascript/javascript_page_redirect.html
+}
+
+</script>
+</head>
+<body id="bgimg">
+ <div class="col-md-12 col-sm-12 col-xs-12">
+
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="frontpage.html">Home</a></li>
+  <li role="presentation"><a href="review.html">Reviews</a></li>
+  <li role="presentation"><a href="#">About us</a></li>
+</ul>
+
+
+<h2 id="style-welcome"><marquee>Welcome, let's EXPLORE!</marquee></h2>
+
+
+<!--drop down for states --> 
+<p id="state" style="padding-left:42%; font-size:100%">
+<select id="stateid" onchange="distname()" >
+	<optgroup>
+	<option>Andhra Pradesh</option>
+	<option>Arunachal Pradesh</option>
+	<option>Assam</option>
+	<option>Bihar</option>
+	<option>Chandigarh </option>
+	<option>Chhattisgarh</option>
+	<option>Goa</option>
+	<option>Gujarat</option>
+	<option>Haryana</option>
+	<option>Himachal Pradesh</option>
+	<option>Jammu and Kashmir</option>
+	<option>Jharkhand</option>
+	<option>Karnataka</option>
+	<option>Kerala</option>
+	<option>Madhya Pradesh</option>
+	<option>Maharashtra</option>
+	<option>Manipur</option>
+	<option>Meghalaya</option>
+	<option>Mizoram</option>
+	<option>Nagaland</option>
+	<option>Odisha</option>
+	<option>Puducherry</option>
+	<option>Punjab</option>
+	<option>Rajasthan</option>
+	<option>Sikkim</option>
+	<option>Tamil Nadu</option>
+	<option>Telangana</option>
+	<option>Tripura</option>
+	<option>Uttar Pradesh</option>
+	<option>Uttarakhand</option>
+	<option>West Bengal</option>
+	</optgroup>
+</select>
+</p>
+
+<p style="padding-left:42%; font-size:100%">
+<select id="dname" onchange="distcall()" >
+	<option id="d1"> </option>
+	<option id="d2"> </option>
+	<option id="d3"> </option>
+	<option id="d4"> </option>
+	<option id="d5"> </option>
+	<option id="d6"> </option>
+	<option id="d7"> </option>
+	<option id="d8"> </option>
+	<option id="d9"> </option>
+	<option id="d10"> </option>
+	<option id="d11"> </option>
+	<option id="d12"> </option>
+	<option id="d13"> </option>
+	<option id="d14"> </option>
+	<option id="d15"> </option>
+	<option id="d16"> </option>
+	<option id="d17"> </option>
+	<option id="d18"> </option>
+	<option id="d19"> </option>
+	<option id="d20"> </option>
+	<option id="d21"> </option>
+	<option id="d22"> </option>
+	<option id="d23"> </option>
+	<option id="d24"> </option>
+	<option id="d25"> </option>
+	<option id="d26"> </option>
+	<option id="d27"> </option>
+	<option id="d28"> </option>
+	<option id="d29"> </option>
+</select>
+</p>
+<!--submit button -->
+<p style="padding-left:47%; font-size:30px">
+<button type="button"  id="sub" onclick="mys()"  style="font-size:100%;"></button>
+</div>
+</p>
+
+<!-- Details of state -->
+<p id="para-id">
+India, officially the Republic of India  is a country in South Asia. It is the seventh-largest country by area, the second-most populous country (with over 1.2 billion people), and the most populous democracy in the world. Bounded by the Indian Ocean on the south, the Arabian Sea on the south-west, and the Bay of Bengal on the south-east, it shares land borders with Pakistan to the west;[d] China, Nepal, and Bhutan to the north-east; and Myanmar (Burma) and Bangladesh to the east. In the Indian Ocean, India is in the vicinity of Sri Lanka and the Maldives; in addition, India's Andaman and Nicobar Islands share a maritime border with Thailand and Indonesia.
+
+Home to the ancient Indus Valley Civilisation and a region of historic trade routes and vast empires, the Indian subcontinent was identified with its commercial and cultural wealth for much of its long history. Four religions—Hinduism, Buddhism, Jainism, and Sikhism—originated here, whereas Zoroastrianism, Judaism, Christianity, and Islam arrived in the 1st millennium CE and also shaped the region's diverse culture. Gradually annexed by and brought under the administration of the British East India Company from the early 18th century and administered directly by the United Kingdom after the Indian Rebellion of 1857, India became an independent nation in 1947 after a struggle for independence that was marked by non-violent resistance led by Mahatma Gandhi.
+</p>
+
+<!-- footer-->
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<footer id="footer-style">
+  <p>Posted by: Some One</p>
+  <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
+</footer>
+</body>
+</html>

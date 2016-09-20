@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+<title>
+review
+</title>
+</head>
+<body id="bg2">
+ <div class="col-md-12 col-sm-12 col-xs-12">
+        <ul class="nav nav-tabs" style="padding-top:15px">
+  <li role="presentation"><a href="frontpage.html">Home</a></li>
+  <li role="presentation" class="active"><a href="review.html">Reviews</a></li>
+  <li role="presentation"><a href="#">About us</a></li>
+</ul>
+
+<div style="padding-left:15px;padding-right:15px;padding-top:15px">
+<form onsubmit="myFunction()">
+  
+<lable>name</lable>
+<br/>
+<input type="text" placeholder="name" id="name"/>
+<br/>
+
+<lable>email</lable>
+<br/>
+<input type="text" placeholder="email" id="email"/>
+<br/>
+
+<lable>review</lable>
+<br/>
+<textarea rows="4" cols="50" placeholder="review" id="textarea"></textarea>
+<br/>
+<button type="submit" class="btn btn-default">Submit</button>
+</form>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+</script>
+
+<script type="text/javascript">
+function myFunction() {
+    //alert("The form was submitted");
+    name=document.getElementById("name").value;
+    email=document.getElementById("email").value;
+    textarea=document.getElementById("textarea").value;
+    if(name=="" && email=="" && textarea=="")
+    {
+       alert("Empty fields, enter name, email and review");
+    }
+    else 
+    {
+      if (name=="") 
+        alert("Empty field, enter password");
+
+
+      if (email=="") 
+        alert("Empty field, enter email");
+
+      if (textarea=="") 
+        alert("Empty field, enter review");
+
+
+    }
+}
+
+</script>
+
+
+</body>
+</html>

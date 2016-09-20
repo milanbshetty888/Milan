@@ -1,0 +1,84 @@
+#bg1 {
+    background-image: url(bg1.jpg);
+
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+}
+
+#bg2 {
+    background-image: url(review.jpg);
+
+    background-repeat: no-repeat, repeat;
+padding: 15px;
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 8px solid #000;
+    text-align: left;
+    padding: 8px;
+	/*color:white;*/
+	
+}
+
+th:hover
+{
+background-color:#888;
+}
+
+
+tr:hover{background-color:#bbb}
+
+
+#sp
+{
+style="padding-left:40%"
+}
+
+#bgimg {
+    background-image: url(bgimg.jpg);
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+}
+
+#style-welcome
+{
+	color: blue;
+	text-decoration: underline;
+	text-shadow: 4px 2px #aaa;
+}
+
+#table-style
+{
+background-color:#fff;
+color: blue;
+	text-decoration: underline;
+	text-shadow: 4px 2px #aaa;
+}
+
+
+#footer-style
+{
+text-align:center;
+color: red;
+}
+
+optgroup { font-size:30px; }
+
+/*para-graph*/
+
+#para-id {
+    color: red;
+	text-shadow: 1px 1px green;
+    font-family: courier;
+text-indent: 50px;
+    text-align: justify;
+
+
+}

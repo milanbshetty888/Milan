@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+ 
+  <body id="bg1">
+ <div class="col-md-12 col-sm-12 col-xs-12">
+       <ul class="nav nav-tabs">
+  <li role="presentation" ><a href="frontpage.html">Home</a></li>
+  <li role="presentation"><a href="review.html">Reviews</a></li>
+  <li role="presentation"><a href="#">About us</a></li>
+</ul>
+
+<div id="topimp">
+ <img src="welcome.png" alt="welcome" style="padding-left:40%" height="100%" width="100%" >
+</div>
+
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      
+  
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Life Style <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a onclick="clothing()">Clothing</a></li>
+            <li><a onclick="saf()">Sports and Fitness</a></li>
+            <li><a onclick="foot()">Footware</a></li>
+
+          </ul>
+        </li>
+      </ul>
+
+
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Entertainment <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a onclick="thet()">Theater</a></li>
+            <li><a onclick="tour()">Tourist place</a></li>
+            <li><a onclick="park()">Parks</a></li>
+          </ul>
+        </li>
+      </ul>
+     
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Education <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a onclick="school()">School</a></li>
+            <li><a href="#">college</a></li>
+          </ul>
+        </li>
+      </ul>
+     
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Automotives <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Car Showroom</a></li>
+            <li><a href="#">Bike Showroom</a></li>
+            <li><a href="#">Accessories</a></li>
+          </ul>
+        </li>
+      </ul>
+     
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Emergency <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">police</a></li>
+            <li><a href="#">Hospital</a></li>
+            <li><a href="#">Fire Dept</a></li>
+          </ul>
+        </li>
+      </ul>
+     
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- google map -->
+<p id="all">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d74169.82841424062!2d76.60225401943298!3d12.310976735720859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf70381d572ef9%3A0x2b89ece8c0f8396d!2sMysuru%2C+Karnataka+570001!5e0!3m2!1sen!2sin!4v1473517014282" width="100%" height="450"  align="middle" frameborder="0" style="border:0" allowfullscreen></iframe> 
+</p>
+
+
+
+
+<table border="3" id="table"  >	
+
+ </table>
+</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+</script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+
+
+$("div.container-fluid").fadeOut("fast");
+$("div.container-fluid").fadeIn("slow");
+$("table").hide();
+
+function clothing()
+{
+	$("img").fadeIn("slow");
+	img='<img src="cloths.jpg" alt="welcome" style="padding-left:40%">';
+
+	document.getElementById("topimp").innerHTML=img;
+
+  mp='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d62370.454992615305!2d76.60755276029452!3d12.305452031897378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sclothing+stores+in+mysore!5e0!3m2!1sen!2sin!4v1473516631084" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+	document.getElementById("all").innerHTML=mp;
+
+ct='<table border="3" id="table-style">	<tr>	<th>name</th><th>review</th><th>address</th><th>visit us</th></tr>	<tr>	<th>Badsha Stores - The Silk Experience Since 1965</th><th>4.8</th><th>Shop# 5, Vishveshwarya Bhawan, K.R Circle, Devaraja Mohalla, Chamrajpura, Mysuru, Karnataka 570001</th><th> <a href="https://www.google.co.in/url?sa=t&rct=j&url=http%3A%2F%2Fwww.badshastores.com%2F&source=maps&cd=1&usg=AFQjCNFS0D7bpL3EAREjn84kwRHyHxXYcw&ved=1t%3A3443%2Cp%3APQrVV8-AHsrdvASps5OIBg">Badsha store</a></th>	</tr>	<tr><th>Shoppers Stop</th><th>4.3</th><th>Shop# 5, Vishveshwarya Bhawan, K.R Circle, Devaraja Mohalla, Chamrajpura, Mysuru, Karnataka 570001</th><th> <a href="https://www.google.co.in/url?sa=t&rct=j&url=http%3A%2F%2Fwww.shoppersstop.com%2F&source=maps&cd=1&usg=AFQjCNGmquwjNVps-7f47TX9eztnsuYdCg&ved=1t%3A3443%2Cp%3APQrVV8-AHsrdvASps5OIBg">shoppers stop</a></th>	</tr>	<tr>		<th>Senthil Kumar Textiles</th><th>4.2</th><th>No.67/1A, Sayyaji Rao Road, Near Agrahara Circle, Kille Mohalla,, Agrahara, Fort Mohalla, Mysuru, Karnataka 570004</th><th>**None**</th>	</tr> </table>';
+
+	document.getElementById("table").innerHTML=ct;
+
+$("table").fadeIn();
+$("table").show();
+
+}
+
+function saf()
+{
+img='<img src="saf.jpg" alt="welcome" style="padding-left:40%" >';
+	document.getElementById("topimp").innerHTML=img;
+
+ mp='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d124738.19389915955!2d76.60225397229785!3d12.311169880904924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssports+and+fitness+center+in+mysore!5e0!3m2!1sen!2sin!4v1473517627789" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+	document.getElementById("all").innerHTML=mp;
+
+document.getElementById("table").innerHTML="";
+
+}
+
+function foot()
+{
+img='<img src="foot.jpg" alt="welcome" style="padding-left:40%" >';
+	document.getElementById("topimp").innerHTML=img;
+
+ mp='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d249535.44162228378!2d76.48776888536774!3d12.248869426043271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sfootware+store+in+mysore!5e0!3m2!1sen!2sin!4v1473517786182" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+	document.getElementById("all").innerHTML=mp;
+document.getElementById("table").innerHTML="";
+}
+
+function thet()
+{
+
+img='<img src="thet.jpg" alt="welcome" style="padding-left:40%" >';
+	document.getElementById("topimp").innerHTML=img;
+
+ mp='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d62369.07084165123!2d76.60790526030414!3d12.31127977904667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1stheaters+in+Mysuru%2C+Karnataka!5e0!3m2!1sen!2sin!4v1473518022470" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+	document.getElementById("all").innerHTML=mp;
+document.getElementById("table").innerHTML="";
+}
+function tour()
+{
+
+img='<img src="tour.jpg" alt="welcome" style="padding-left:40%" >';
+	document.getElementById("topimp").innerHTML=img;
+
+
+document.getElementById("all").innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31185.0914701127!2d76.62506266667147!3d12.306597679688112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1stourist+place+in+mysore!5e0!3m2!1sen!2sin!4v1473583674055" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+document.getElementById("table").innerHTML="";
+}
+
+function school()
+{
+img='<img src="school.jpg" alt="welcome" style="padding-left:40%" >';
+	document.getElementById("topimp").innerHTML=img;
+
+document.getElementById("all").innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31185.08164508733!2d76.62506265833933!3d12.306680424526533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sschools+and+colleages+in+mysore!5e0!3m2!1sen!2sin!4v1473583819543" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+document.getElementById("table").innerHTML="";
+}
+
+function car()
+{
+img='<img src="car.jpg" alt="welcome" style="padding-left:40%" >';
+	document.getElementById("topimp").innerHTML=img;
+
+document.getElementById("all").innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31185.071820000892!2d76.6250626500072!3d12.306763169331505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scar+showroom+in+mysore!5e0!3m2!1sen!2sin!4v1473583948365" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+document.getElementById("table").innerHTML="";
+}
+
+function bike()
+{
+
+img='<img src="bike.jpg" alt="welcome" style="padding-left:40%">';
+	document.getElementById("topimp").innerHTML=img;
+
+document.getElementById("all").innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31185.061994853386!2d76.62506264167506!3d12.306845914103034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbike+showroom+in+mysore!5e0!3m2!1sen!2sin!4v1473583983125" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+document.getElementById("table").innerHTML="";
+}
+
+function police()
+{
+
+img='<img src="police.jpg" alt="welcome" style="padding-left:40%" >';
+	document.getElementById("topimp").innerHTML=img;
+
+document.getElementById("all").innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31185.04234437517!2d76.62506262501078!3d12.307011403545735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spolice+station+in+Mysore%2C+Karnataka!5e0!3m2!1sen!2sin!4v1473584145844" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+document.getElementById("table").innerHTML="";
+}
+
+function hosp()
+{
+img='<img src="hosp.jpg" alt="welcome" style="padding-left:40%" >';
+	document.getElementById("topimp").innerHTML=img;
+
+document.getElementById("all").innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31185.03251904446!2d76.62506261667865!3d12.307094148216908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shospital+in+Mysore%2C+Karnataka!5e0!3m2!1sen!2sin!4v1473584215045" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+document.getElementById("table").innerHTML="";
+}
+
+
+function fire()
+{
+img='<img src="fire.jpg" alt="welcome" style="padding-left:40%" >';
+	document.getElementById("topimp").innerHTML=img;
+
+document.getElementById("all").innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31185.04234437517!2d76.62506262501078!3d12.307011403545735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sfire+station+in+Mysore%2C+Karnataka!5e0!3m2!1sen!2sin!4v1473584189385" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+document.getElementById("table").innerHTML="";
+}
+
+function accs()
+{
+img='<img src="acss.jpg" alt="welcome" style="padding-left:40%" >';
+	document.getElementById("topimp").innerHTML=img;
+
+document.getElementById("all").innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31184.0697970381!2d76.6094491225916!3d12.315199120701449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sautomobiles+accessory+shops+in+Mysore%2C+Karnataka!5e0!3m2!1sen!2sin!4v1473584444413" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+document.getElementById("table").innerHTML="";
+}
+
+function park()
+{
+img='<img src="park.jpg" alt="welcome" style="padding-left:40%">';
+	document.getElementById("topimp").innerHTML=img;
+
+document.getElementById("all").innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d62365.331511091135!2d76.61790010829085!3d12.327010071843889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sparks+in+Mysore%2C+Karnataka!5e0!3m2!1sen!2sin!4v1473584325701" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+document.getElementById("table").innerHTML="";
+}
+
+
+</script>
+  </body>
+</html>

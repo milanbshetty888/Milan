@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<title>
+mysore city guide
+</title>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: blue;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: purple;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+
+<script>
+function clothing()
+{
+	img='<img src="cloths.jpg" alt="welcome" style="padding-left:40%" width="300" height="170">';
+	document.getElementById("topimp").innerHTML=img;
+
+
+  mp='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d62370.454992615305!2d76.60755276029452!3d12.305452031897378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sclothing+stores+in+mysore!5e0!3m2!1sen!2sin!4v1473516631084" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+	document.getElementById("all").innerHTML=mp;
+
+ct='<table border="3" id="table-style">	<tr>	<th>name</th><th>review</th><th>address</th><th>visit us</th></tr>	<tr>	<th>Badsha Stores - The Silk Experience Since 1965</th><th>4.8</th><th>Shop# 5, Vishveshwarya Bhawan, K.R Circle, Devaraja Mohalla, Chamrajpura, Mysuru, Karnataka 570001</th><th> <a href="https://www.google.co.in/url?sa=t&rct=j&url=http%3A%2F%2Fwww.badshastores.com%2F&source=maps&cd=1&usg=AFQjCNFS0D7bpL3EAREjn84kwRHyHxXYcw&ved=1t%3A3443%2Cp%3APQrVV8-AHsrdvASps5OIBg">Badsha store</a></th>	</tr>	<tr><th>Shoppers Stop</th><th>4.3</th><th>Shop# 5, Vishveshwarya Bhawan, K.R Circle, Devaraja Mohalla, Chamrajpura, Mysuru, Karnataka 570001</th><th> <a href="https://www.google.co.in/url?sa=t&rct=j&url=http%3A%2F%2Fwww.shoppersstop.com%2F&source=maps&cd=1&usg=AFQjCNGmquwjNVps-7f47TX9eztnsuYdCg&ved=1t%3A3443%2Cp%3APQrVV8-AHsrdvASps5OIBg">shoppers stop</a></th>	</tr>	<tr>		<th>Senthil Kumar Textiles</th><th>4.2</th><th>No.67/1A, Sayyaji Rao Road, Near Agrahara Circle, Kille Mohalla,, Agrahara, Fort Mohalla, Mysuru, Karnataka 570004</th><th>**None**</th>	</tr> </table>';
+
+	document.getElementById("table").innerHTML=ct;
+
+}
+
+function saf()
+{
+img='<img src="saf.jpg" alt="welcome" style="padding-left:40%" width="300" height="170">';
+	document.getElementById("topimp").innerHTML=img;
+
+ mp='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d124738.19389915955!2d76.60225397229785!3d12.311169880904924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssports+and+fitness+center+in+mysore!5e0!3m2!1sen!2sin!4v1473517627789" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+	document.getElementById("all").innerHTML=mp;
+
+ct='<table border="3">	<tr>	<th>name</th><th>review</th><th>address</th><th>visit us</th></tr><tr>	<th>Miracle Slim Care</th><th>4.8</th><th>1, 1st and 2nd Floor, Gokulam Road, Jayalakshmipuram, 3rd Block, Jayalakshmipuram, Mysuru, Karnataka 570012</th><th> **none**</th>	</tr><tr><th>Golds Gym Mysore</th><th>4.3</th><th>3rd Floor, B.M.Habitat Mall, Gokulam Main Road, Jayalakshmipuram, 3rd Block, Jayalakshmipuram, Mysuru, Karnataka 570012</th><th><a href="https://www.google.co.in/url?sa=t&rct=j&url=http%3A%2F%2Fwww.goldsgymindia.com%2F&source=maps&cd=1&usg=AFQjCNGxEIx1Z81d19_DfDLo8y_ai2Sp-Q&ved=1t%3A3443%2Cp%3AwhLVV8OTCMzjvASRwZ2QCg">www.goldsgymindia.com</a></th>	</tr>	</table>';
+document.getElementById("table").innerHTML=ct;
+}
+
+function foot()
+{
+img='<img src="foot.jpg" alt="welcome" style="padding-left:40%" width="300" height="170">';
+	document.getElementById("topimp").innerHTML=img;
+
+ mp='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d249535.44162228378!2d76.48776888536774!3d12.248869426043271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sfootware+store+in+mysore!5e0!3m2!1sen!2sin!4v1473517786182" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+	document.getElementById("all").innerHTML=mp;
+ct='<table border="3">	<tr>	<th>name</th><th>review</th><th>address</th><th>visit us</th></tr><tr><th>Style Footwear	</th><th>4.8</th><th>110, Mysore, D Devaraj Urs Road, D. Devaraj Urs Road, Subbarayanakere, Chamrajpura, Mysuru, Karnataka 570001	</th><th>**None**</th>	</tr></tr><tr><th>Soles	</th><th>4.8</th><th>Devs Jewellery, Plot No. 121, Shop No. 4, Garuda Mysore Mall, Near KR Circle, M.G Road, Makkaji Chowk Area, Devaraja Mohalla, Mandi Mohalla, Mysuru, Karnataka 570010</th><th> <a href="https://www.google.co.in/url?sa=t&rct=j&url=http%3A%2F%2Fwww.solesshoes.com%2F&source=maps&cd=1&usg=AFQjCNF0EvKxXj0K-wS8xkP9-C_L_eeN9w&ved=1t%3A3443%2Cp%3AwhLVV8OTCMzjvASRwZ2QCg">Soles	</a></th>	</tr>';
+document.getElementById("table").innerHTML=ct;
+}
+
+function thet()
+{
+
+img='<img src="thet.jpg" alt="welcome" style="padding-left:40%" width="300" height="170">';
+	document.getElementById("topimp").innerHTML=img;
+
+ mp='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d62369.07084165123!2d76.60790526030414!3d12.31127977904667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1stheaters+in+Mysuru%2C+Karnataka!5e0!3m2!1sen!2sin!4v1473518022470" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+	document.getElementById("all").innerHTML=mp;
+ct='<table border="3"><tr>	<th>name</th><th>review</th><th>address</th><th>visit us</th></tr><tr>	<th>inox</th><th>4.8</th><th>Plot No. C1, Third Floor , Mall of Mysore, MG Road,Opposite Mysore Golf Club, Indira Nagar Extension, Nazarbad Mohalla, Indiranagar Extension, JC Nagar, Mysuru, Karnataka 570010</th><th> <a href="https://www.google.co.in/url?sa=t&rct=j&url=http%3A%2F%2Fwww.inoxmovies.com%2F&source=maps&cd=1&usg=AFQjCNEiqjInRXafSP7-0HYn-T-mji1Idw&ved=1t%3A3443%2Cp%3APQrVV8-AHsrdvASps5OIBg">inox</a></th>	</tr><tr><th>DRC</th><th>4.3</th><th>3rd Floor, B.M.Habitat Mall, Gokulam Main Road, Jayalakshmipuram, 3rd Block, Jayalakshmipuram, Mysuru, Karnataka 570012</th><th> <a href="https://www.google.co.in/url?sa=t&rct=j&url=http%3A%2F%2Fwww.shoppersstop.com%2F&source=maps&cd=1&usg=AFQjCNGmquwjNVps-7f47TX9eztnsuYdCg&ved=1t%3A3443%2Cp%3APQrVV8-AHsrdvASps5OIBg">DRC</a></th>	</tr>	</table>';
+document.getElementById("table").innerHTML=ct;
+}
+function tour()
+{
+
+img='<img src="tour.jpg" alt="welcome" style="padding-left:40%" width="300" height="170">';
+	document.getElementById("topimp").innerHTML=img;
+
+
+document.getElementById("all").innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31185.0914701127!2d76.62506266667147!3d12.306597679688112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1stourist+place+in+mysore!5e0!3m2!1sen!2sin!4v1473583674055" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+}
+
+function school()
+{
+img='<img src="school.jpg" alt="welcome" style="padding-left:40%" width="300" height="170">';
+	document.getElementById("topimp").innerHTML=img;
+
+document.getElementById("all").innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31185.08164508733!2d76.62506265833933!3d12.306680424526533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sschools+and+colleages+in+mysore!5e0!3m2!1sen!2sin!4v1473583819543" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+}
+
+function car()
+{
+img='<img src="car.jpg" alt="welcome" style="padding-left:40%" width="300" height="170">';
+	document.getElementById("topimp").innerHTML=img;
+
+document.getElementById("all").innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31185.071820000892!2d76.6250626500072!3d12.306763169331505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scar+showroom+in+mysore!5e0!3m2!1sen!2sin!4v1473583948365" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+}
+
+function bike()
+{
+
+img='<img src="bike.jpg" alt="welcome" style="padding-left:40%" width="300" height="170">';
+	document.getElementById("topimp").innerHTML=img;
+
+document.getElementById("all").innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31185.061994853386!2d76.62506264167506!3d12.306845914103034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbike+showroom+in+mysore!5e0!3m2!1sen!2sin!4v1473583983125" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+}
+
+function police()
+{
+
+img='<img src="police.jpg" alt="welcome" style="padding-left:40%" width="300" height="170">';
+	document.getElementById("topimp").innerHTML=img;
+
+document.getElementById("all").innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31185.04234437517!2d76.62506262501078!3d12.307011403545735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spolice+station+in+Mysore%2C+Karnataka!5e0!3m2!1sen!2sin!4v1473584145844" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+}
+
+function hosp()
+{
+img='<img src="hosp.jpg" alt="welcome" style="padding-left:40%" width="300" height="170">';
+	document.getElementById("topimp").innerHTML=img;
+
+document.getElementById("all").innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31185.03251904446!2d76.62506261667865!3d12.307094148216908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shospital+in+Mysore%2C+Karnataka!5e0!3m2!1sen!2sin!4v1473584215045" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+}
+
+
+function fire()
+{
+img='<img src="fire.jpg" alt="welcome" style="padding-left:40%" width="300" height="170">';
+	document.getElementById("topimp").innerHTML=img;
+
+document.getElementById("all").innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31185.04234437517!2d76.62506262501078!3d12.307011403545735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sfire+station+in+Mysore%2C+Karnataka!5e0!3m2!1sen!2sin!4v1473584189385" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+}
+
+function accs()
+{
+img='<img src="acss.jpg" alt="welcome" style="padding-left:40%" width="300" height="170">';
+	document.getElementById("topimp").innerHTML=img;
+
+document.getElementById("all").innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31184.0697970381!2d76.6094491225916!3d12.315199120701449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sautomobiles+accessory+shops+in+Mysore%2C+Karnataka!5e0!3m2!1sen!2sin!4v1473584444413" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+}
+
+function park()
+{
+img='<img src="park.jpg" alt="welcome" style="padding-left:40%" width="300" height="170">';
+	document.getElementById("topimp").innerHTML=img;
+
+document.getElementById("all").innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d62365.331511091135!2d76.61790010829085!3d12.327010071843889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sparks+in+Mysore%2C+Karnataka!5e0!3m2!1sen!2sin!4v1473584325701" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+}
+</script>
+
+
+
+</head>
+<body id="bg1">
+<p id="topimp">
+ <img src="welcome.png" alt="welcome" style="padding-left:40%" width="300" height="170">
+</p>
+<!-- drop down menu starts here -->
+<ul>
+<li class="dropdown">
+    <a class="dropbtn">Lifestyle</a>
+    <div class="dropdown-content">
+      <a onclick="clothing()">Clothing</a>
+      <a onclick="saf()">Sports and Fitness</a>
+      <a onclick="foot()">Footware</a>
+    </div>
+
+<li class="dropdown">
+    <a class="dropbtn">Entertainment</a>
+    <div class="dropdown-content">
+      <a onclick="thet()">Theaters</a>
+      <a onclick="tour()">Tourist place</a>
+      <a onclick="park()">Parks</a>
+    </div>
+
+  <li class="dropdown">
+    <a  class="dropbtn">Education</a>
+    <div class="dropdown-content">
+      <a onclick="school()">Schools</a>
+      <a onclick="school()">Colleages</a>
+    </div>
+
+
+  <li class="dropdown">
+    <a class="dropbtn">Automative</a>
+    <div class="dropdown-content">
+      <a onclick="car()">Car showrooms</a>
+      <a onclick="bike()">Bike Showrooms</a>
+	<a onclick="accs()">Accessories</a>
+    </div>
+
+
+  <li class="dropdown">
+    <a class="dropbtn">Emergency</a>
+    <div class="dropdown-content">
+      <a onclick="police()">Police</a>
+      <a onclick="hosp()">Hospitals</a>
+      <a onclick="fire()">Fire dept</a>
+    </div>
+  </li>
+</ul>
+<!-- drop down menu ends here -->
+
+<!-- google map -->
+<p id="all">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d74169.82841424062!2d76.60225401943298!3d12.310976735720859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf70381d572ef9%3A0x2b89ece8c0f8396d!2sMysuru%2C+Karnataka+570001!5e0!3m2!1sen!2sin!4v1473517014282" width="100%" height="450"  align="middle" frameborder="0" style="border:0" allowfullscreen></iframe> 
+</p>
+
+
+<p id="table" class="table table-striped">
+
+</p>
+
+</body>
+<html>
