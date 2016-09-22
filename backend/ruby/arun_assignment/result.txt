@@ -1,0 +1,119 @@
+1)Inheritance: process of accessing the member function and data members of super class by the sub class.
+milan@milan-desktop:~/Desktop$ gedit inherit_arun.rb
+
+******************************program for inheritance*******************************
+class Superclass
+	def func1
+		puts "calling function of super class"
+	end
+end
+
+class Subclass < Superclass
+	def func2
+		puts "calling function of sub class"
+	end
+end
+
+object=Subclass.new
+object.func1
+object.func2
+
+********************************output*************************************
+milan@milan-desktop:~/Desktop$ ruby inherit_arun.rb
+calling function of super class
+calling function of sub class
+
+
+
+
+
+
+
+
+
+
+
+2)encapsulation: process of hiding the data from outside access.
+milan@milan-desktop:~/Desktop$ gedit encapsulation_arun.rb
+************************************program for encapsulation************************************
+class Document 
+
+	def initialize(var1)
+		@name = var1
+		puts "initialize called to initialize: @name=#@name"
+	end
+
+	def set_val(name)
+		@name=name		
+		puts "function called to set: @name=#@name"
+	end
+	def print_val
+		puts "function to print Encapsulated val: @name=#@name"
+	end
+end
+
+obj1=Document.new(5)
+obj1.print_val
+obj1.set_val(50)
+obj1.print_val
+obj2=Document.new(10)
+obj2.print_val
+obj2.set_val(100)
+obj2.print_val
+
+**********************************output***********************************
+milan@milan-desktop:~/Desktop$ ruby encapsulation_arun.rb
+initialize called to initialize: @name=5
+function to print Encapsulated val: @name=5
+function called to set: @name=50
+function to print Encapsulated val: @name=50
+initialize called to initialize: @name=10
+function to print Encapsulated val: @name=10
+function called to set: @name=100
+function to print Encapsulated val: @name=100
+
+
+
+
+
+
+
+
+
+
+
+3)polymorphism: method with same name but have different operations based in the object used to call the method.
+milan@milan-desktop:~/Desktop$ gedit polymorphism_arun.rb
+***************************************program for polymorphism***********************************************
+class Superclass
+	def print
+		puts "function of Superclass"
+	end
+end
+
+
+class Subclass1 < Superclass
+	 def print
+		puts "function of Subclass1"
+	 end
+end
+
+class Subclass2 < Superclass
+	 def print
+		puts "function of Subclass2"
+	 end
+end
+
+obj1=Superclass.new
+obj1.print
+obj2=Subclass1.new
+obj2.print
+obj3=Subclass2.new
+obj3.print
+
+******************************output*************************************************************
+milan@milan-desktop:~/Desktop$ ruby polymorphism_arun.rb
+function of Superclass
+function of Subclass1
+function of Subclass2
+
