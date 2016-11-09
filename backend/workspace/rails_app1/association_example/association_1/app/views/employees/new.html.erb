@@ -1,0 +1,16 @@
+	<%= form_for :employee, url:company_employees_path do |f|%>
+	<p>
+		<%= f.label :name %><br/>
+		<%= f.text_field :name %>
+	</p>
+	<p>
+		<%= f.label :city %><br/>
+		<%= f.text_field :city %>
+	</p>
+	<p>
+		<%= f.label :age %><br/>
+		<%= f.text_field :age %>
+	<p>
+		<%= f.submit%>
+	</p>
+	<%end%>

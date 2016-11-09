@@ -1,0 +1,23 @@
+<table border="3px">
+	<tr>
+		<th>name</th>
+		<th>city</th>
+		<th></th>
+		<th></th>
+	</tr>
+	<% @company.each do |var|%>
+	<tr>
+		<td><%= var.name%></td>
+		<td>
+			<%= var.city%>
+		</td>
+	
+		<td>
+			<%= link_to 'list_employess',company_employees_path(var.id)%>
+		</td>
+		<td>
+			<%= link_to 'create employee',new_company_employee_path(var)%>
+		</td>
+	</tr>
+	<%end%>
+</table>
