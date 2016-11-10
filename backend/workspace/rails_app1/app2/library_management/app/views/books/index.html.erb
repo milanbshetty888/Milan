@@ -1,0 +1,28 @@
+<table border="3px">
+
+<tr>
+	<th>id</th>
+	<th>book</th>
+	<th>author</th>
+	<th>publication</th>
+	<th>edit</th>
+	<th>delete</th>
+</tr>
+<% @books.each do |b|%>
+
+	<tr>
+		<td><%= b.id%></td>
+		<td><%= b.book_name%></td>
+		<td><%= b.author%></td>
+		<td><%= b.publication%></td>
+
+
+		<td><%= link_to 'edit', book_edit_path(b)%></td>
+		<td><%= link_to 'destroy', book_destroy_path(b), 
+		method: :delete,
+		data: {confirm: 'are you sure?'}
+		%></td>
+	</tr>
+
+<%end%>
+</table>

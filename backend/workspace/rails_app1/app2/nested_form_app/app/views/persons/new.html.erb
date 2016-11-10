@@ -1,0 +1,21 @@
+<%= form_for :person, url:persons_path do |f| %>
+<p>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+</p>
+  Addresses:
+    <%= f.fields_for :addresses do |addresses_form| %>
+<p>
+        <%= addresses_form.label :kind %>
+        <%= addresses_form.text_field :kind, class: 'text' %>
+ </p>
+ <p>
+        <%= addresses_form.label :street %>
+        <%= addresses_form.text_field :street %>
+</p>
+    <% end %>
+
+  <%= f.submit%>
+<% end %>
+
+

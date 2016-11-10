@@ -1,0 +1,13 @@
+
+<%= @books.book_name%><br/>
+<%= @books.author%><br/>
+<%= @books.publication%>
+
+<br/>
+<%= link_to 'to create new record', book_new_path%>
+<br/>
+<%= link_to 'to list records', books_list_path%>
+<br/>
+<%= link_to 'edit content',  book_edit_path(@books)%>
+
+

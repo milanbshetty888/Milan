@@ -1,0 +1,12 @@
+	<%= form_for :student, url:student_path do |f|%>
+	<p>
+		<%= f.label :student_name %><br/>
+		<%= f.text_field :name %>
+	</p>
+		<%= f.submit%>
+	</p>
+	<%end%>
+	
+	<%= link_to 'create_teacher', new_teacher_path %>
+	<%= link_to 'create_subject', new_subject_path %>
+	<%= link_to 'index_student', students_path %>	

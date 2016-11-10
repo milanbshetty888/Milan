@@ -1,0 +1,17 @@
+	<%= form_for :subject, url:subject_path do |f|%>
+	<p>
+		<%= f.label :subject_name %><br/>
+		<%= f.text_field :subject %>
+	</p>
+	</p>
+		<%= select_tag 'student_id', options_for_select(@student.collect{ |var| [var.name, var.id] })%>
+		<%= select_tag 'teacher_id', options_for_select(@teacher.collect{ |var1| [var1.name, var1.id] })%>
+	<p>
+		<%= f.submit%>
+	</p>
+	<%end%>
+
+	<%= link_to 'create_student', student_new_path %>
+	<%= link_to 'create_teacher', new_teacher_path %>
+	<%= link_to 'subject_index', subject_index_path %>
+

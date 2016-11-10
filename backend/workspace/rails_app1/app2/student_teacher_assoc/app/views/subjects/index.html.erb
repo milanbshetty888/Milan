@@ -1,0 +1,25 @@
+<table>
+	<tr>
+		<th>subject_name</th>
+		<th>teacher_id</th>
+		<th>student_id</th>
+	</tr>
+	<% @subject.each do |var|%>
+	<tr>
+		<td>
+			<%= var.subject%>
+		</td>
+		<td>
+			<%= var.teacher_id%>
+		</td>
+		<td>
+			<%= var.student_id%>
+		</td>
+	</tr>
+	<%end%>
+</table>
+
+	<%= link_to 'create_student', student_new_path %>
+	<%= link_to 'create_teacher', new_teacher_path %>
+	<%= link_to 'create_subject', new_subject_path %>
+	
